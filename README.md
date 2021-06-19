@@ -49,7 +49,9 @@ This repository is organized in the following way:
  4. Click on the admin section on the bottom left and sign in with username: admin and password: admin. In this way you are logged as admnistrator.
 <br>
 <br>
+
 ### **for more details on OpenHAB go on: https://www.openhab.org/docs/** 
+
 <br>
 
 ## 3. Connection of OpenHAB with InfluxDB:
