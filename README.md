@@ -38,7 +38,7 @@ This repository is organized in the following way:
 
 ## 2. Installation of OpenHAB:
 ---
- 1. download the folder openhab-3.0.2 from this repository;
+ 1. download and unzip openhab-3.0.2.zip from this repository;
  2. By using the terminal go inside the folder  openhab-3.0.2 and run the command <code>./start.sh </code> if you are using MacOS or Ubuntu, otherwise you are using windows so run <code>start.bat</code>
  3. Now openHAB is running, so, go on the browser to the following url: http://127.0.0.1:8080;
  4. Click on the admin section on the bottom left and sign in with username: admin and password: admin. In this way you are logged as admnistrator.
