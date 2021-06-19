@@ -22,7 +22,7 @@ This repository is organized in the following way:
 
 
 ## 1. Installation and configuration of InfluxDB:
----
+
  1. Install InfluxDB from the site: https://docs.influxdata.com/influxdb/v2.0/install/?t=Docker;
  2. Launch the instance of InfluxDB and go to the following url: http://127.0.0.1:8086
  3. Now because it should be the first time you are using influDB you have to create a user with username and password;
@@ -32,12 +32,17 @@ This repository is organized in the following way:
  7. Now import the dasboards contained in the folder of this repository dahboards-influxdb2;
  8. Go to Data and then to Token, click on Generate and after that click on "All Access Token" (in this way you are able to connect openhab to influxdb by using only this token, otherwise you can also use the username and password of InfluxDB, **for more details see the screenshoot contained in the folder of this repository Installation_Screenshoots/InfluxDB/InfluxDB-Token.png)**
 <br>
+
+
 ### Now we are ready to install OpenHAB and integrate it with InfluDB.
+
+
 <br>
+
 <br>
 
 ## 2. Installation of OpenHAB:
----
+
  1. download and unzip openhab-3.0.2.zip from this repository;
  2. By using the terminal go inside the folder  openhab-3.0.2 and run the command <code>./start.sh </code> if you are using MacOS or Ubuntu, otherwise you are using windows so run <code>start.bat</code>
  3. Now openHAB is running, so, go on the browser to the following url: http://127.0.0.1:8080;
@@ -48,7 +53,8 @@ This repository is organized in the following way:
 <br>
 
 ## 3. Connection of OpenHAB with InfluxDB:
----
+
+
  1. Go to OpenHAB on the page of settings and click on Persistance
  2. Now select  the checkbox "InfluDB persistance layer";
  3. go back to settings and click on "InfluxDB Persistence Service" contained in the section "Other Service";
@@ -61,7 +67,6 @@ Scrivere delle immagini
 <br>
 
 ## 4. Installation of FlaskML:
----
  1. download the folder ANNFlaskService from this repo.
  2. go inside the directory by using the terminal;
  3. run the command <code>docker build -t flask-ml:latest .</code>
@@ -74,8 +79,9 @@ In order to do that go on openHAB and click on rules, for each rule you have to 
 <br>
 <br>
 
+
 ## 5. Mosquitto Broker Installation
----
+
 1. Download the broker from this site: https://mosquitto.org/download/ and follow what it's written in order to run it;
 
  <br>
@@ -89,7 +95,7 @@ In case the publishers or subscribers to the broker mosquito are running on othe
 <br>
 
 ## 6. OpenHAB Cloud configuration
----
+
 1. go on OpenHAB, click on settings, then on Misc and then on the button + on the right bottom;
 2. Add OpenHAB Cloud Connector;
 3. Go on https://myopenhab.org/;
@@ -107,7 +113,6 @@ Moreover, now you can integrate the OpenHAB API iside the telegram service. it's
 <br>
 
 ## 7. Running WineBarrelSensors
-----
  1. download the directory WineBarrelSensors from this repo;
  2. By using the terminal go inside the folder WineBarrelSensors/target; 
  3. run the command; <code> java -jar wineBarrel-with-depency.jar </code> 
@@ -120,7 +125,7 @@ and then run in the terminal the following command: <code> java -jar wineryBarre
 <br>
 
 ## 8. Creating a telegram bot:
----
+
 1. Downlaod telegram;
 2. Start the chat with BotFather by typing on the search bar "BotFather";
 3. Start the bot by clicking the command /start;
@@ -132,6 +137,7 @@ and then run in the terminal the following command: <code> java -jar wineryBarre
 **There are several screenshots in the folder Installation_ Screenshoots/Telegram**
 Once you have run the following commands BotFather will give us the **Token**.
 The **Token** is very important because it will allow us to manage the bot.
+
 <br>
 
 ### **More details on: https://core.telegram.org/bots**
@@ -142,7 +148,7 @@ The **Token** is very important because it will allow us to manage the bot.
 <br>
 
 ## 9. Installation of Nodered and integration with Telegram Bot
----
+
 1. Download nodered (https://nodered.org/docs/getting-started/), in docker you can simply typing from the terminal the command:  <code> docker run -it -p 1880:1880 --name mynodered nodered/node-red </code>;
 2. Connect to the nodered Service (http://localhost:1880/, if installed in localhost);
 3. Download the packet "node-red-contrib-telegrambot"  (**more details in the screenshoot Nodered1.jpg contained in the folder Installation-Screenshoots/Nodered/**);
@@ -162,7 +168,7 @@ Now if everything is went well you will use the bot of telegram integrated with 
 <br>
 
 ## 10. OpenHAB App
----
+
 1. download OpenHAB for IOS or Android;
 2. In the app settings, set the different paramiters;
 
